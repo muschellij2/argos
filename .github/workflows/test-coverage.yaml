@@ -29,8 +29,8 @@ jobs:
           needs: coverage
 
       - name: Install Argos
-        run: reticulate::py_install("argostranslate", pip = TRUE)
-        shell: Rscript {0}
+        run: |
+          pip install argostranslate
 
       - name: Test coverage
         run: |

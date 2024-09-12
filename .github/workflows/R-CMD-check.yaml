@@ -47,8 +47,8 @@ jobs:
           needs: check
 
       - name: Install Argos
-        run: reticulate::py_install("argostranslate", pip = TRUE)
-        shell: Rscript {0}
+        run: |
+          pip install argostranslate
 
       - uses: r-lib/actions/check-r-package@v2
         with:
