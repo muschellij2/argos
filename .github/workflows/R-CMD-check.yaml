@@ -46,9 +46,10 @@ jobs:
           extra-packages: any::rcmdcheck
           needs: check
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+      - name: Install Argos
+        run: reticulate::py_install("argostranslate", pip = TRUE)
+        shell: Rscript {0}
+
 
       - uses: r-lib/actions/check-r-package@v2
         with:
