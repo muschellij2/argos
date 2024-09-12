@@ -4,6 +4,8 @@
 # argos
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/muschellij2/argos/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/muschellij2/argos/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `argos` is to wrap the
