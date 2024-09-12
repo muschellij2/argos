@@ -40,10 +40,14 @@ argos_translate =  function(
     update_package_index = TRUE
 ) {
 
-  install_language_package(
-    code_from = code_from,
-    code_to = code_to,
-    update_package_index = update_package_index)
+  if (!curl::has_internet()) {
+    warning("No internet detected, skipping install_language_package")
+  } else {
+    install_language_package(
+      code_from = code_from,
+      code_to = code_to,
+      update_package_index = update_package_index)
+  }
 
   result = argos_translate_only(
     text = text,

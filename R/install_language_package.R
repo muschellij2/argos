@@ -25,10 +25,14 @@ install_language_package = function(
   run_from_code = code_from
   run_to_code = code_to
 
+  if (!curl::has_internet()) {
+    warning("No internet detected, install_language_package may not work!")
+  }
   if (update_package_index) {
     # Download and install Argos Translate package
     apackage$update_package_index()
   }
+
 
   # Get available packages
   available_packages = apackage$get_available_packages()
