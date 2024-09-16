@@ -117,6 +117,7 @@ list_installed_language_packages = function() {
     res = lapply(names_extract, function(r) {
       x[[r]]
     })
+    names(res) = names_extract
     res = sapply(res, function(r) {
       if (is.null(r)) {
         r = NA_character_

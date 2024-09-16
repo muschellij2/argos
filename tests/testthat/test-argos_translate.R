@@ -24,3 +24,19 @@ testthat::test_that("Translation to Spanish", {
     hello_world_no_net,
     "¡Hola, mundo!")
 })
+
+
+testthat::test_that("See if Spanish Translate Installed", {
+  skip_if_argos_not_installed()
+  testthat::expect_true(
+    argos::is_language_package_installed(
+      code_from = "en",
+      code_to = "es")
+  )
+
+  testthat::expect_false(
+    argos::is_language_package_installed(code_from = "en",
+                                         code_to = "blah")
+  )
+})
+
