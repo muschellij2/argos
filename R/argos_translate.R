@@ -47,10 +47,15 @@ argos_translate =  function(
   if (!curl::has_internet()) {
     warning("No internet detected, skipping install_language_package")
   } else {
-    install_language_package(
-      code_from = code_from,
-      code_to = code_to,
-      update_package_index = update_package_index)
+    res = try({
+      install_language_package(
+        code_from = code_from,
+        code_to = code_to,
+        update_package_index = update_package_index)
+    }, silent = TRUE)
+    if (inherits(res, "try-error")) {
+      warning("Installing language package may have failed")
+    }
   }
 
   result = argos_translate_only(
