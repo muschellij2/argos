@@ -5,3 +5,4 @@
 ^\.github$
 ^requirements\.txt$
 ^\.DS_Store$
+^cran-comments\.md$
