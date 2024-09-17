@@ -8,7 +8,7 @@ list_installed_language_packages()
 }
 \value{
 If none installed, \code{NULL} and if some are installed, a \code{data.frame}
-of information of the language packags
+of information of the language packages
 }
 \description{
 List Installed Argos Language Packages

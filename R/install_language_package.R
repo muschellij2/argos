@@ -94,7 +94,7 @@ is_language_package_installed = function(
 #' List Installed Argos Language Packages
 #'
 #' @return If none installed, `NULL` and if some are installed, a `data.frame`
-#' of information of the language packags
+#' of information of the language packages
 #' @export
 #'
 #' @examples
