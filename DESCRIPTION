@@ -1,4 +1,4 @@
-Package: argos
+Package: argostranslate
 Title: Translate Text using the 'Argos' Translate Python Module
 Version: 0.1.0
 Authors@R: c(

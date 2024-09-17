@@ -2,10 +2,13 @@
 % Please edit documentation in R/install_argos.R
 \name{install_argos}
 \alias{install_argos}
+\alias{install_argostranslate}
 \alias{is_argos_installed}
 \title{Install Argos}
 \usage{
 install_argos(packages = NULL, pip = TRUE, ...)
+
+install_argostranslate(packages = NULL, pip = TRUE, ...)
 
 is_argos_installed()
 }

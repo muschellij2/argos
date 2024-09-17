@@ -1,23 +1,23 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# argos
+# argostranslate
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/muschellij2/argos/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/muschellij2/argos/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/muschellij2/argostranslate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/muschellij2/argostranslate/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of `argos` is to wrap the
+The goal of `argostranslate` is to wrap the
 [`argostranslate`](https://github.com/argosopentech/argos-translate)
 Python module.
 
 ## Installation
 
-You can install the development version of `argos` like so:
+You can install the development version of `argostranslate` like so:
 
 ``` r
-remotes::install_github("muschellij2/argos")
+remotes::install_github("muschellij2/argostranslate")
 ```
 
 ### Installation of `argostranslate` Python Module
@@ -28,7 +28,7 @@ environment enacted, use `reticulate::py_install` or simply
 `install_argos`
 
 ``` r
-library(argos)
+library(argostranslate)
 install_argos()
 ```
 
@@ -48,7 +48,7 @@ If you use this method, you should run
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(argos)
+library(argostranslate)
 argos_translate("Hello World!")
 #> [1] "¡Hola Mundo!"
 ```
@@ -56,4 +56,4 @@ argos_translate("Hello World!")
 ## License
 
 Argos Translate is dual licensed under either the [MIT
-License](https://github.com/muschellij2/argos/blob/master/LICENSE).
+License](https://github.com/muschellij2/argostranslate/blob/master/LICENSE).

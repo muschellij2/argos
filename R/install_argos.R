@@ -26,6 +26,9 @@ install_argos = function(
     ...
   )
 }
+#' @export
+#' @rdname install_argos
+install_argostranslate = install_argos
 
 #' @export
 #' @rdname install_argos

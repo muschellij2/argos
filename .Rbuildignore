@@ -1,6 +1,7 @@
-^argos\.Rproj$
+^argostranslate\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
 ^\.github$
 ^requirements\.txt$
+^\.DS_Store$
