@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(argos)
+library(argostranslate)
 
-test_check("argos")
+test_check("argostranslate")
