@@ -26,7 +26,7 @@ install_language_package = function(
 
 
   argos = reticulate::import("argostranslate", convert = TRUE)
-  apackage = argos$package
+  apackage = reticulate::import("argostranslate.package", convert = TRUE)
 
   if (!curl::has_internet()) {
     warning("No internet detected, install_language_package may not work!")
