@@ -35,11 +35,11 @@ This only translates the text, it does not install language packages.
 }
 \examples{
 if (is_argos_installed()) {
-  argos_translate_only("Hello World")
+  argos_translate("Hello World")
 }
 \dontrun{
     if (is_argos_installed()) {
-        argos_translate("Hello World")
+        argos_translate_only("Hello World")
     }
 }
 }
