@@ -11,11 +11,15 @@
 #'
 #' @examples
 #' if (is_argos_installed()) {
-#'   argos_translate("Hello World")
+#'   code_from = "en"
+#'   code_to = "es"
+#'   if (is_language_package_installed(code_from, code_to)) {
+#'      argos_translate_only("Hello World", code_from = code_from, code_to = code_to)
+#'   }
 #' }
 #' \dontrun{
 #'     if (is_argos_installed()) {
-#'         argos_translate_only("Hello World")
+#'         argos_translate("Hello World")
 #'     }
 #' }
 argos_translate_only = function(
